@@ -19,6 +19,17 @@ int main()
 	insertion_sort(sort_vec);
 	//call the selection sort function to sort the enter numbers 
 	selection_sort(sort_vec);
+	//call the function of merger sort
+	vector<double>::iterator beg = sort_vec.begin();
+	vector<double>::iterator end = sort_vec.end()-1;
+	//merger_sort(beg, end);
+	for (; beg != sort_vec.end(); beg++)
+	{
+		cout << *beg << " ";
+
+	}
+	cout << endl;
+
 
 	system("pause");
 	return 0;

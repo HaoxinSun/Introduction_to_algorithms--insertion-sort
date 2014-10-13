@@ -74,9 +74,48 @@ int selection_sort(vector<double> &sort_vec)
 	cout << endl;
 	return 0;
 }
-//merge sort function
-int merge_sort(vector<double> &sort_vec)
+//merger sort function
+//The idea for merger sort is divide and conquer
+int merger_sort(vector<double>::iterator beg,vector<double>::iterator end)
 {
+	// the condition to break the recursion
+	if (beg == end)
+	{
+		return 0;
+	}
+	vector<double>::difference_type distance = (end - beg) / 2;
+	vector<double>::iterator middle = beg + distance;
+	merger_sort(beg, middle);
+	merger_sort(middle + 1, end);
+	//if the two divided partion is sorted, we merger the two part to a sorted sequence
+	vector<double>::iterator current = middle + 1;
+	//this part is similarly to insertion sort
+	for (; current != end + 1; current++)
+	{
+		double tem = *current;
+		bool par = true;
+		//USE WHILE IS BETER !!!! 
+		for (vector<double>::size_type i = distance +1; i != 0; --i)
+		{
+			if (*(beg + i-1)>tem)
+			{
+				*(beg + i) = *(beg + i - 1);
+		    }
+			else
+			{
+				par = false;
+				*(beg + i) = tem;
+				break;
+			}
+
+		}
+		if (par)
+		{
+			*beg = tem;
+		}
+		
+	}
+
 	return 0;
 }
 
