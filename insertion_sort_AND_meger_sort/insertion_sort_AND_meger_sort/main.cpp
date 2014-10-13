@@ -2,10 +2,7 @@
 #include<string>
 #include<vector>
 #include"Sort_function.h"
-
-
 using namespace std;
-
 int main()
 {
 	//this program include two sort methods, one is insertion sort and the other is merge sort 
@@ -20,10 +17,9 @@ int main()
 	}
 	//call the insertion sort function to sort the numbers
 	insertion_sort(sort_vec);
+	//call the selection sort function to sort the enter numbers 
+	selection_sort(sort_vec);
 
-	
-
-	
 	system("pause");
 	return 0;
 }

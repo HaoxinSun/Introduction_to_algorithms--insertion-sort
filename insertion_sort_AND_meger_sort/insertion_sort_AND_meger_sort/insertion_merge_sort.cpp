@@ -2,9 +2,7 @@
 #include<vector>
 #include<iostream>
 #include<string>
-
 using namespace std;
-
 //define the two sort functions
 //The insertion sort
 int insertion_sort(vector<double> &sort_vec)
@@ -30,17 +28,50 @@ int insertion_sort(vector<double> &sort_vec)
 			{
 				*(sbeg + 1) = tem;
 				break;
-
 			}
 		}
 
 	}
 	//output the sorted sequence
-	cout << "The sorted number is " << endl;
+	cout << "The insertion method sort function results are " << endl;
 	for (vector<double>::iterator beg = sort_vec.begin(); beg != sort_vec.end(); ++beg)
 	{
 		cout << *beg << " ";
 	}
+	cout << endl;
+	return 0;
+}
+//selection sort funciton
+//firt we find the minimum number and swap it with the first element int the vector container
+//the second iteration ,find the minimum number from the second element to the last element and swip it with the second element etc.
+int selection_sort(vector<double> &sort_vec)
+{
+	vector<double>::size_type length = sort_vec.size();
+	for (vector<double>::size_type index = 0; index != length - 1; index++)
+	{
+		//min is the minimum number variable and initialize with the value of the first element's index
+		double min = index;
+		for (vector<double>::size_type j = index+1 ; j != length; j++)
+		{
+			if (sort_vec[j] < sort_vec[min])
+			{
+				min = j;
+			}
+		}
+		if (min != index)
+		{
+			//swap the minimum number with the index number
+			double temp = sort_vec[min];
+			sort_vec[min] = sort_vec[index];
+			sort_vec[index] = temp;
+		}
+	}
+	cout << "The selection sort method's sort results are" << endl;
+	for (vector<double>::size_type i = 0; i != length; i++)
+	{
+		cout << sort_vec[i] << " ";
+	}
+	cout << endl;
 	return 0;
 }
 //merge sort function

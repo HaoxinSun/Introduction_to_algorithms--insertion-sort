@@ -1,0 +1,19 @@
+﻿Build started 10/13/2014 7:53:11 PM.
+     1>Project "E:\GitRepository\insert_sort\Introduction_to_algorithms--insertion-sort\insertion_sort_AND_meger_sort\insertion_sort_AND_meger_sort\insertion_sort_AND_meger_sort.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt insertion_merge_sort.cpp main.cpp
+         main.cpp
+         insertion_merge_sort.cpp
+     1>e:\gitrepository\insert_sort\introduction_to_algorithms--insertion-sort\insertion_sort_and_meger_sort\insertion_sort_and_meger_sort\insertion_merge_sort.cpp(55): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>e:\gitrepository\insert_sort\introduction_to_algorithms--insertion-sort\insertion_sort_and_meger_sort\insertion_sort_and_meger_sort\insertion_merge_sort.cpp(63): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>e:\gitrepository\insert_sort\introduction_to_algorithms--insertion-sort\insertion_sort_and_meger_sort\insertion_sort_and_meger_sort\insertion_merge_sort.cpp(64): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+         Generating Code...
+       Link:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\GitRepository\insert_sort\Introduction_to_algorithms--insertion-sort\insertion_sort_AND_meger_sort\Debug\insertion_sort_AND_meger_sort.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\GitRepository\insert_sort\Introduction_to_algorithms--insertion-sort\insertion_sort_AND_meger_sort\Debug\insertion_sort_AND_meger_sort.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\GitRepository\insert_sort\Introduction_to_algorithms--insertion-sort\insertion_sort_AND_meger_sort\Debug\insertion_sort_AND_meger_sort.lib" /MACHINE:X86 Debug\insertion_merge_sort.obj
+         Debug\main.obj
+         insertion_sort_AND_meger_sort.vcxproj -> E:\GitRepository\insert_sort\Introduction_to_algorithms--insertion-sort\insertion_sort_AND_meger_sort\Debug\insertion_sort_AND_meger_sort.exe
+     1>Done Building Project "E:\GitRepository\insert_sort\Introduction_to_algorithms--insertion-sort\insertion_sort_AND_meger_sort\insertion_sort_AND_meger_sort\insertion_sort_AND_meger_sort.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.02
